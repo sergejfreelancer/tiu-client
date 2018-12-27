@@ -39,7 +39,7 @@ class Parser {
                     'text' => trim((string)$xml->address)
                 ),
             ),
-            'managerComment' => 'text' => trim((string)$xml->address)
+            'managerComment' => trim((string)$xml->address)
         ));
 
         if (empty($xml->name) && empty((string) $xml->email)) {
