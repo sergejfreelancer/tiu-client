@@ -68,6 +68,7 @@ class Parser {
         foreach($xmlItems as $xmlItem) {
             $items[] = array(
                 'productId' => (string)$xmlItem['id'],
+                #'productId' => (string)$xmlItem->external_id, // используется только при интеграции с Мой склад
                 'productName' => (string)$xmlItem->name,
                 'quantity' => (string)$xmlItem->quantity,
                 'initialPrice' => (string)$xmlItem->price
